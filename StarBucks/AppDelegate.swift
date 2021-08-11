@@ -93,7 +93,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let giftVC = GiftViewController()
         let storeVC = StoreViewController()
         
-        let homeNavController = UINavigationController(rootViewController: homeVC)
+        let homeNavController = makeNavigationController(rootViewController: homeVC)
         let scanNavController = UINavigationController(rootViewController: scanVC)
         let orderNavController = UINavigationController(rootViewController: orderVC)
         let giftNavController = UINavigationController(rootViewController: giftVC)
