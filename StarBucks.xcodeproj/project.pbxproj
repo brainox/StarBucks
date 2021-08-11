@@ -8,18 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		B4935F7026C34C4400FC9D3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4935F6F26C34C4400FC9D3C /* AppDelegate.swift */; };
-		B4935F7426C34C4400FC9D3C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4935F7326C34C4400FC9D3C /* ViewController.swift */; };
+		B4935F7426C34C4400FC9D3C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4935F7326C34C4400FC9D3C /* HomeViewController.swift */; };
 		B4935F7926C34C4600FC9D3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4935F7826C34C4600FC9D3C /* Assets.xcassets */; };
 		B4935F7C26C34C4600FC9D3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4935F7A26C34C4600FC9D3C /* LaunchScreen.storyboard */; };
+		B4B94F0C26C3F83800021C56 /* Factories.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B94F0B26C3F83800021C56 /* Factories.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B4935F6C26C34C4400FC9D3C /* StarBucks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarBucks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4935F6F26C34C4400FC9D3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B4935F7326C34C4400FC9D3C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B4935F7326C34C4400FC9D3C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		B4935F7826C34C4600FC9D3C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B4935F7B26C34C4600FC9D3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B4935F7D26C34C4600FC9D3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4B94F0B26C3F83800021C56 /* Factories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Factories.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +56,8 @@
 			children = (
 				B4935F8326C34CAA00FC9D3C /* Resources */,
 				B4935F6F26C34C4400FC9D3C /* AppDelegate.swift */,
-				B4935F7326C34C4400FC9D3C /* ViewController.swift */,
+				B4B94F0B26C3F83800021C56 /* Factories.swift */,
+				B4B94F0D26C4005300021C56 /* Home */,
 			);
 			path = StarBucks;
 			sourceTree = "<group>";
@@ -67,6 +70,14 @@
 				B4935F7D26C34C4600FC9D3C /* Info.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		B4B94F0D26C4005300021C56 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				B4935F7326C34C4400FC9D3C /* HomeViewController.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +149,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4935F7426C34C4400FC9D3C /* ViewController.swift in Sources */,
+				B4B94F0C26C3F83800021C56 /* Factories.swift in Sources */,
+				B4935F7426C34C4400FC9D3C /* HomeViewController.swift in Sources */,
 				B4935F7026C34C4400FC9D3C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
