@@ -25,9 +25,22 @@ class TileView: UIView {
 extension TileView {
     func style() {
         imageView.translatesAutoresizingMaskIntoConstraints = false
+        imageView.image = UIImage(named: "meatless")
+        imageView.clipsToBounds = true
+        imageView.contentMode = .scaleAspectFill
     }
     
     func layout() {
+        addSubview(imageView)
         
+        NSLayoutConstraint.activate([
+            imageView.topAnchor.constraint(equalTo: topAnchor),
+            imageView.leadingAnchor.constraint(equalTo: leadingAnchor),
+            imageView.trailingAnchor.constraint(equalTo: trailingAnchor)
+        ])
+    }
+    
+    override var intrinsicContentSize: CGSize {
+        return CGSize(width: 100, height: 300)
     }
 }
