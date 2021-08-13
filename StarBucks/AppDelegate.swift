@@ -93,15 +93,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let giftVC = GiftViewController()
         let storeVC = StoreViewController()
         
-        let homeNavController = makeNavigationController(rootViewController: homeVC)
+        
         let scanNavController = UINavigationController(rootViewController: scanVC)
         let orderNavController = UINavigationController(rootViewController: orderVC)
         let giftNavController = UINavigationController(rootViewController: giftVC)
         let storeNavController = UINavigationController(rootViewController: storeVC)
         
         let tabBarController = UITabBarController()
-        tabBarController.viewControllers = [homeNavController, scanNavController, orderNavController, giftNavController, storeNavController] 
-        
+        tabBarController.viewControllers = [homeVC, scanNavController, orderNavController, giftNavController, storeNavController]
+        tabBarController.tabBar.tintColor = .lightGreen
+        tabBarController.tabBar.isTranslucent = false
         window?.rootViewController = tabBarController
         return true
     }
