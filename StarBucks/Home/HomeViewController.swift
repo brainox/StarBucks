@@ -16,11 +16,11 @@ class HomeViewController: StarBucksViewController {
     var headerViewTopConstraint: NSLayoutConstraint?
     
     let tiles = [
-        TileViewController("Star Balance"),
-        TileViewController("Bonus Stars"),
-        TileViewController("Try these"),
-        TileViewController("Welcome back"),
-        TileViewController("Uplifting")
+        PlaceHolderViewController("Star Balance"),
+        PlaceHolderViewController("Bonus Stars"),
+        PlaceHolderViewController("Try these"),
+        PlaceHolderViewController("Welcome back"),
+        PlaceHolderViewController("Uplifting")
     ]
     
     override func viewDidLoad() {
