@@ -67,7 +67,6 @@ class GiftViewController: StarBucksViewController {
 class StoreViewController: StarBucksViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .systemPink
         title = "Stores"
     }
     

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B42576D626C8078E00B53283 /* RewardTileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42576D526C8078E00B53283 /* RewardTileViewController.swift */; };
+		B42576D826C8079800B53283 /* RewardTileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42576D726C8079800B53283 /* RewardTileView.swift */; };
+		B42576DA26C80C9500B53283 /* BalanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42576D926C80C9500B53283 /* BalanceView.swift */; };
 		B4935F7026C34C4400FC9D3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4935F6F26C34C4400FC9D3C /* AppDelegate.swift */; };
 		B4935F7426C34C4400FC9D3C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4935F7326C34C4400FC9D3C /* HomeViewController.swift */; };
 		B4935F7926C34C4600FC9D3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4935F7826C34C4600FC9D3C /* Assets.xcassets */; };
@@ -19,6 +22,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B42576D526C8078E00B53283 /* RewardTileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardTileViewController.swift; sourceTree = "<group>"; };
+		B42576D726C8079800B53283 /* RewardTileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardTileView.swift; sourceTree = "<group>"; };
+		B42576D926C80C9500B53283 /* BalanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceView.swift; sourceTree = "<group>"; };
 		B4935F6C26C34C4400FC9D3C /* StarBucks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarBucks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4935F6F26C34C4400FC9D3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B4935F7326C34C4400FC9D3C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -43,6 +49,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B42576D426C8077600B53283 /* Rewards */ = {
+			isa = PBXGroup;
+			children = (
+				B42576D526C8078E00B53283 /* RewardTileViewController.swift */,
+				B42576D726C8079800B53283 /* RewardTileView.swift */,
+				B42576D926C80C9500B53283 /* BalanceView.swift */,
+			);
+			path = Rewards;
+			sourceTree = "<group>";
+		};
 		B4935F6326C34C4400FC9D3C = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +99,7 @@
 		B4B94F0D26C4005300021C56 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				B42576D426C8077600B53283 /* Rewards */,
 				B4935F7326C34C4400FC9D3C /* HomeViewController.swift */,
 				B4B94F0E26C4026C00021C56 /* HomeHeaderView.swift */,
 				B4A7F21526C69E5E004237AB /* PlaceHolderViewController.swift */,
@@ -162,12 +179,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4B94F0F26C4026C00021C56 /* HomeHeaderView.swift in Sources */,
+				B42576DA26C80C9500B53283 /* BalanceView.swift in Sources */,
 				B4B94F0C26C3F83800021C56 /* Factories.swift in Sources */,
 				B4935F7426C34C4400FC9D3C /* HomeViewController.swift in Sources */,
+				B42576D826C8079800B53283 /* RewardTileView.swift in Sources */,
 				B4A7F21A26C6CDBC004237AB /* TileViewController.swift in Sources */,
 				B4A7F21626C69E5E004237AB /* PlaceHolderViewController.swift in Sources */,
 				B4A7F21826C6CD80004237AB /* TileView.swift in Sources */,
 				B4935F7026C34C4400FC9D3C /* AppDelegate.swift in Sources */,
+				B42576D626C8078E00B53283 /* RewardTileViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
