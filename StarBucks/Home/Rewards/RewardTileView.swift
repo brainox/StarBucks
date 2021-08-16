@@ -99,5 +99,11 @@ extension RewardTileView {
         ])
     }
     
-    
+    // Redraw our graph once we know our actual device width & height
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        
+        rewardsGraphView.actualFrameWidth = frame.width
+        rewardsGraphView.drawRewardsGraph()
+    }
 }
