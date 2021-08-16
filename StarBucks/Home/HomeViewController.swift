@@ -13,8 +13,14 @@ class HomeViewController: StarBucksViewController {
     let headerView = HomeHeaderView()
     let scrollView = UIScrollView()
     let stackView = UIStackView()
+    let scanButton = UIButton()
     
     var headerViewTopConstraint: NSLayoutConstraint?
+    
+    struct ScanButtonSpacing {
+        static let height: CGFloat = 60
+        static let width: CGFloat = 170
+    }
     
     let tiles = [
         RewardsTileViewController(),
@@ -57,12 +63,21 @@ extension HomeViewController {
         stackView.axis = .vertical
         stackView.spacing = 8
         
+        scanButton.translatesAutoresizingMaskIntoConstraints = false
+        scanButton.setTitle("Scan in store", for: .normal)
+        scanButton.titleLabel?.minimumScaleFactor = 0.5
+        scanButton.titleLabel?.font = UIFont.preferredFont(forTextStyle: .title3)
+        scanButton.titleLabel?.adjustsFontSizeToFitWidth = true
+        scanButton.setTitleColor(.white, for: .normal)
+        scanButton.backgroundColor = .lightGreen
+        scanButton.layer.cornerRadius = ScanButtonSpacing.height / 2
     }
     
     func layout() {
         view.addSubview(topSpacerView)
         view.addSubview(headerView)
         view.addSubview(scrollView)
+        view.addSubview(scanButton)
         
         scrollView.addSubview(stackView)
         
@@ -94,7 +109,12 @@ extension HomeViewController {
             stackView.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor),
             stackView.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor),
             
-            stackView.widthAnchor.constraint(equalTo: scrollView.widthAnchor)
+            stackView.widthAnchor.constraint(equalTo: scrollView.widthAnchor),
+            
+            scanButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16),
+            scanButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -16),
+            scanButton.widthAnchor.constraint(equalToConstant: ScanButtonSpacing.width),
+            scanButton.heightAnchor.constraint(equalToConstant: ScanButtonSpacing.height),
         ])
     }
 }
