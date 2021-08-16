@@ -52,5 +52,11 @@ extension StarRewardsRow {
             descriptionLabel.bottomAnchor.constraint(equalTo: bottomAnchor)
         ])
         
+        starAndPoints.setContentHuggingPriority(.defaultHigh, for: .horizontal)
+        descriptionLabel.heightAnchor.constraint(equalToConstant: descriptionLabel.frame.size.height).setActiveBreakable()
+    }
+    
+    override var intrinsicContentSize: CGSize {
+        return CGSize(width: 10, height: 16)
     }
 }
