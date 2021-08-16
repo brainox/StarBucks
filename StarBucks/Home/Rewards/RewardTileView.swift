@@ -5,7 +5,6 @@
 //  Created by Decagon on 14/08/2021.
 //
 
-//udacity-123456-project-bucket
 import UIKit
 
 class RewardTileView: UIView {
@@ -15,6 +14,8 @@ class RewardTileView: UIView {
     let rewardsGraphView = RewardsGraphView()
     let starRewardsView = StarRewardView()
     var detailsButton = UIButton()
+    
+    var heightConstraint: NSLayoutConstraint?
     
     override init(frame: CGRect) {
         super.init(frame: .zero)
@@ -45,6 +46,7 @@ extension RewardTileView {
     
     func makeRewardsOptionButton() {
         rewardsButton.translatesAutoresizingMaskIntoConstraints = false
+//        rewardsButton.addTarget(self, action: #selector(rewardOptionsTapped), for: .primaryActionTriggered)
         
         let configuration = UIImage.SymbolConfiguration(scale: .small)
         let image = UIImage(systemName: "chevron.down", withConfiguration: configuration)
@@ -69,6 +71,7 @@ extension RewardTileView {
         addSubview(starRewardsView)
         addSubview(detailsButton)
         
+        heightConstraint = starRewardsView.heightAnchor.constraint(equalToConstant: 0)
         
         NSLayoutConstraint.activate([
             balanceView.topAnchor.constraint(equalTo: topAnchor),
@@ -86,12 +89,14 @@ extension RewardTileView {
             starRewardsView.topAnchor.constraint(equalToSystemSpacingBelow: rewardsGraphView.bottomAnchor, multiplier: 1),
             starRewardsView.leadingAnchor.constraint(equalToSystemSpacingAfter: leadingAnchor, multiplier: 1),
             trailingAnchor.constraint(equalToSystemSpacingAfter: starRewardsView.trailingAnchor, multiplier: 1),
+            heightConstraint!,
             
             detailsButton.topAnchor.constraint(equalToSystemSpacingBelow: starRewardsView.bottomAnchor, multiplier: 2),
             detailsButton.leadingAnchor.constraint(equalTo: balanceView.leadingAnchor),
             bottomAnchor.constraint(equalToSystemSpacingBelow: detailsButton.bottomAnchor, multiplier: 2)
             
         ])
+        starRewardsView.isHidden = true
     }
     
     // Redraw our graph once we know our actual device width & height
@@ -102,3 +107,5 @@ extension RewardTileView {
         rewardsGraphView.drawRewardsGraph()
     }
 }
+
+
