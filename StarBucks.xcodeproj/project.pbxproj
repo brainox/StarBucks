@@ -10,6 +10,7 @@
 		B42576D626C8078E00B53283 /* RewardTileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42576D526C8078E00B53283 /* RewardTileViewController.swift */; };
 		B42576D826C8079800B53283 /* RewardTileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42576D726C8079800B53283 /* RewardTileView.swift */; };
 		B42576DA26C80C9500B53283 /* BalanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42576D926C80C9500B53283 /* BalanceView.swift */; };
+		B42576DC26C9E65E00B53283 /* RewardsGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42576DB26C9E65E00B53283 /* RewardsGraphView.swift */; };
 		B4935F7026C34C4400FC9D3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4935F6F26C34C4400FC9D3C /* AppDelegate.swift */; };
 		B4935F7426C34C4400FC9D3C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4935F7326C34C4400FC9D3C /* HomeViewController.swift */; };
 		B4935F7926C34C4600FC9D3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4935F7826C34C4600FC9D3C /* Assets.xcassets */; };
@@ -25,6 +26,7 @@
 		B42576D526C8078E00B53283 /* RewardTileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardTileViewController.swift; sourceTree = "<group>"; };
 		B42576D726C8079800B53283 /* RewardTileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardTileView.swift; sourceTree = "<group>"; };
 		B42576D926C80C9500B53283 /* BalanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceView.swift; sourceTree = "<group>"; };
+		B42576DB26C9E65E00B53283 /* RewardsGraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardsGraphView.swift; sourceTree = "<group>"; };
 		B4935F6C26C34C4400FC9D3C /* StarBucks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarBucks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4935F6F26C34C4400FC9D3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B4935F7326C34C4400FC9D3C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -55,6 +57,7 @@
 				B42576D526C8078E00B53283 /* RewardTileViewController.swift */,
 				B42576D726C8079800B53283 /* RewardTileView.swift */,
 				B42576D926C80C9500B53283 /* BalanceView.swift */,
+				B42576DB26C9E65E00B53283 /* RewardsGraphView.swift */,
 			);
 			path = Rewards;
 			sourceTree = "<group>";
@@ -178,6 +181,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B42576DC26C9E65E00B53283 /* RewardsGraphView.swift in Sources */,
 				B4B94F0F26C4026C00021C56 /* HomeHeaderView.swift in Sources */,
 				B42576DA26C80C9500B53283 /* BalanceView.swift in Sources */,
 				B4B94F0C26C3F83800021C56 /* Factories.swift in Sources */,

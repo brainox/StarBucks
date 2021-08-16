@@ -12,13 +12,12 @@ class RewardTileView: UIView {
     
     let balanceView = BalanceView()
     let rewardsButton = UIButton()
-    let rewardsGraphView = UIView()
+    let rewardsGraphView = RewardsGraphView()
     let starRewardsView = UIView()
-    let detailsButton = UIButton()
+    var detailsButton = UIButton()
     
     override init(frame: CGRect) {
         super.init(frame: .zero)
-        backgroundColor = .systemPink
         style()
         layout()
     }
@@ -39,11 +38,14 @@ extension RewardTileView {
         starRewardsView.translatesAutoresizingMaskIntoConstraints = false
         rewardsGraphView.translatesAutoresizingMaskIntoConstraints = false
         
-        detailsButton.translatesAutoresizingMaskIntoConstraints = false
-        detailsButton.titleLabel?.text = "Details"
+        makeRewardsOptionButton()
+        
+        rewardsGraphView.backgroundColor = .systemGreen
+        
+        detailsButton = makeClearButton(withText: "Details")
         
         rewardsButton.backgroundColor = .systemBlue
-        detailsButton.backgroundColor = .systemBlue
+        
     }
     
     func makeRewardsOptionButton() {
@@ -83,6 +85,8 @@ extension RewardTileView {
             rewardsGraphView.topAnchor.constraint(equalToSystemSpacingBelow: balanceView.bottomAnchor, multiplier: 1),
             rewardsGraphView.centerXAnchor.constraint(equalTo: centerXAnchor),
             rewardsGraphView.widthAnchor.constraint(equalToConstant: frame.width),
+            rewardsGraphView.leadingAnchor.constraint(equalToSystemSpacingAfter: leadingAnchor, multiplier: 2),
+            trailingAnchor.constraint(equalToSystemSpacingAfter: rewardsGraphView.trailingAnchor, multiplier: 2),
             
             starRewardsView.topAnchor.constraint(equalToSystemSpacingBelow: rewardsGraphView.bottomAnchor, multiplier: 1),
             starRewardsView.leadingAnchor.constraint(equalToSystemSpacingAfter: leadingAnchor, multiplier: 1),
@@ -94,4 +98,6 @@ extension RewardTileView {
             
         ])
     }
+    
+    
 }
