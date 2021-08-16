@@ -40,12 +40,7 @@ extension RewardTileView {
         
         makeRewardsOptionButton()
         
-        rewardsGraphView.backgroundColor = .systemGreen
-        
         detailsButton = makeClearButton(withText: "Details")
-        
-        rewardsButton.backgroundColor = .systemBlue
-        
     }
     
     func makeRewardsOptionButton() {

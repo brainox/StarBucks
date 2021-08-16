@@ -7,7 +7,7 @@
 
 import UIKit
 
-class RewardTileViewController: UIViewController {
+class RewardsTileViewController: UIViewController {
     
     let rewardTileView = RewardTileView()
     

@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B42576D626C8078E00B53283 /* RewardTileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42576D526C8078E00B53283 /* RewardTileViewController.swift */; };
+		B42576D626C8078E00B53283 /* RewardsTileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42576D526C8078E00B53283 /* RewardsTileViewController.swift */; };
 		B42576D826C8079800B53283 /* RewardTileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42576D726C8079800B53283 /* RewardTileView.swift */; };
 		B42576DA26C80C9500B53283 /* BalanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42576D926C80C9500B53283 /* BalanceView.swift */; };
 		B42576DC26C9E65E00B53283 /* RewardsGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42576DB26C9E65E00B53283 /* RewardsGraphView.swift */; };
@@ -23,7 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B42576D526C8078E00B53283 /* RewardTileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardTileViewController.swift; sourceTree = "<group>"; };
+		B42576D526C8078E00B53283 /* RewardsTileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardsTileViewController.swift; sourceTree = "<group>"; };
 		B42576D726C8079800B53283 /* RewardTileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardTileView.swift; sourceTree = "<group>"; };
 		B42576D926C80C9500B53283 /* BalanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceView.swift; sourceTree = "<group>"; };
 		B42576DB26C9E65E00B53283 /* RewardsGraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardsGraphView.swift; sourceTree = "<group>"; };
@@ -54,7 +54,7 @@
 		B42576D426C8077600B53283 /* Rewards */ = {
 			isa = PBXGroup;
 			children = (
-				B42576D526C8078E00B53283 /* RewardTileViewController.swift */,
+				B42576D526C8078E00B53283 /* RewardsTileViewController.swift */,
 				B42576D726C8079800B53283 /* RewardTileView.swift */,
 				B42576D926C80C9500B53283 /* BalanceView.swift */,
 				B42576DB26C9E65E00B53283 /* RewardsGraphView.swift */,
@@ -191,7 +191,7 @@
 				B4A7F21626C69E5E004237AB /* PlaceHolderViewController.swift in Sources */,
 				B4A7F21826C6CD80004237AB /* TileView.swift in Sources */,
 				B4935F7026C34C4400FC9D3C /* AppDelegate.swift in Sources */,
-				B42576D626C8078E00B53283 /* RewardTileViewController.swift in Sources */,
+				B42576D626C8078E00B53283 /* RewardsTileViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
