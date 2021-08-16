@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		B41EC03326CA9DE200EA7EC0 /* StarAndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41EC03226CA9DE200EA7EC0 /* StarAndPoints.swift */; };
 		B41EC03526CAA3B200EA7EC0 /* StarRewardsRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41EC03426CAA3B200EA7EC0 /* StarRewardsRow.swift */; };
+		B41EC03726CAB48F00EA7EC0 /* StarRewardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41EC03626CAB48F00EA7EC0 /* StarRewardsView.swift */; };
 		B42576D626C8078E00B53283 /* RewardsTileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42576D526C8078E00B53283 /* RewardsTileViewController.swift */; };
 		B42576D826C8079800B53283 /* RewardTileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42576D726C8079800B53283 /* RewardTileView.swift */; };
 		B42576DA26C80C9500B53283 /* BalanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42576D926C80C9500B53283 /* BalanceView.swift */; };
@@ -27,6 +28,7 @@
 /* Begin PBXFileReference section */
 		B41EC03226CA9DE200EA7EC0 /* StarAndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarAndPoints.swift; sourceTree = "<group>"; };
 		B41EC03426CAA3B200EA7EC0 /* StarRewardsRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarRewardsRow.swift; sourceTree = "<group>"; };
+		B41EC03626CAB48F00EA7EC0 /* StarRewardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarRewardsView.swift; sourceTree = "<group>"; };
 		B42576D526C8078E00B53283 /* RewardsTileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardsTileViewController.swift; sourceTree = "<group>"; };
 		B42576D726C8079800B53283 /* RewardTileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardTileView.swift; sourceTree = "<group>"; };
 		B42576D926C80C9500B53283 /* BalanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceView.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 			children = (
 				B41EC03226CA9DE200EA7EC0 /* StarAndPoints.swift */,
 				B41EC03426CAA3B200EA7EC0 /* StarRewardsRow.swift */,
+				B41EC03626CAB48F00EA7EC0 /* StarRewardsView.swift */,
 			);
 			path = StarAndPoints;
 			sourceTree = "<group>";
@@ -206,6 +209,7 @@
 				B4A7F21A26C6CDBC004237AB /* TileViewController.swift in Sources */,
 				B4A7F21626C69E5E004237AB /* PlaceHolderViewController.swift in Sources */,
 				B4A7F21826C6CD80004237AB /* TileView.swift in Sources */,
+				B41EC03726CAB48F00EA7EC0 /* StarRewardsView.swift in Sources */,
 				B4935F7026C34C4400FC9D3C /* AppDelegate.swift in Sources */,
 				B42576D626C8078E00B53283 /* RewardsTileViewController.swift in Sources */,
 			);

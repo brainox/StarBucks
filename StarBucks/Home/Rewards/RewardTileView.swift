@@ -13,7 +13,7 @@ class RewardTileView: UIView {
     let balanceView = BalanceView()
     let rewardsButton = UIButton()
     let rewardsGraphView = RewardsGraphView()
-    let starRewardsView = UIView()
+    let starRewardsView = StarRewardView()
     var detailsButton = UIButton()
     
     override init(frame: CGRect) {
