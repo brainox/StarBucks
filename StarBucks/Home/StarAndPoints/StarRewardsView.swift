@@ -18,12 +18,12 @@ class StarRewardView: UIView {
     }
     
     var rewards: [Reward] =
-    [Reward(numberOfPoints: "25", description: "Customize your drink"),
-     Reward(numberOfPoints: "50", description: "Brewed hot coffee, bakery item or hot tea"),
-     Reward(numberOfPoints: "150", description: "Handcrafted drink, hot breakfast or parfait"),
-     Reward(numberOfPoints: "250", description: "Launch sandwich or protein box"),
-     Reward(numberOfPoints: "400", description: "Select merchandise or at-home coffee")
-    ]
+        [Reward(numberOfPoints: "25", description: "Customize your drink"),
+         Reward(numberOfPoints: "50", description: "Brewed hot coffee, bakery item or hot tea"),
+         Reward(numberOfPoints: "150", description: "Handcrafted drink, hot breakfast or parfait"),
+         Reward(numberOfPoints: "250", description: "Launch sandwich or protein box"),
+         Reward(numberOfPoints: "400", description: "Select merchandise or at-home coffee")
+        ]
     
     override init(frame: CGRect) {
         super.init(frame: .zero)

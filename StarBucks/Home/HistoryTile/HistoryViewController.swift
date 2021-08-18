@@ -10,13 +10,11 @@ import UIKit
 class HistoryViewController: UITableViewController {
     
     var viewModel: HistoryViewModel?
-//    var sections = [HistorySection]()
     
     let cellId = "cell"
     override func viewDidLoad() {
         super.viewDidLoad()
         style()
-//        data()
         fetchTransactions()
     }
     
@@ -36,30 +34,13 @@ class HistoryViewController: UITableViewController {
     }
     
     func style() {
-        navigationItem.title = "Movies"
+        navigationItem.title = "History"
         tableView.register(HistoryViewCell.self, forCellReuseIdentifier: cellId)
         tableView.separatorStyle = .none
         tableView.tableFooterView = UIView()
         
         viewModel = HistoryViewModel()
     }
-    
-//    func data() {
-//        let tx1 = Transaction(id: 1, type: "redeemable", amount: "140", processingDate: Date())
-//        let tx2 = Transaction(id: 1, type: "redeemable", amount: "353", processingDate: Date())
-//        let tx3 = Transaction(id: 1, type: "redeemable", amount: "75", processingDate: Date())
-//        let tx4 = Transaction(id: 1, type: "redeemable", amount: "785", processingDate: Date())
-//        let tx5 = Transaction(id: 1, type: "redeemable", amount: "245", processingDate: Date())
-//        let tx6 = Transaction(id: 1, type: "redeemable", amount: "865", processingDate: Date())
-//
-//        let firstSection = HistorySection(title: "July", transactions: [tx1])
-//        let secondSection = HistorySection(title: "August", transactions: [tx2, tx3])
-//        let thirdSection = HistorySection(title: "December", transactions: [tx4, tx5, tx6])
-//
-//        sections.append(firstSection)
-//        sections.append(secondSection)
-//        sections.append(thirdSection)
-//    }
     
 }
 
@@ -103,7 +84,6 @@ extension HistoryViewController {
             return UITableViewCell()
         }
         cell.transaction = transaction
-        //        cell.textLabel?.text = transaction.amount
         return cell
     }
     

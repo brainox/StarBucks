@@ -8,10 +8,10 @@
 import UIKit
 
 struct HistoryViewModel {
-
+    
     // Output the display
     var sections = [HistorySection]()
-
+    
     // Input
     var transactions: [Transaction]? {
         didSet {
@@ -53,5 +53,5 @@ struct HistoryViewModel {
             
         }
     }
-
+    
 }

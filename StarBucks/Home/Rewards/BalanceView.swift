@@ -57,6 +57,6 @@ class BalanceView: UIView {
             starBalanceLabel.trailingAnchor.constraint(equalTo: trailingAnchor),
             starBalanceLabel.bottomAnchor.constraint(equalTo: bottomAnchor)
         ])
-
+        
     }
 }

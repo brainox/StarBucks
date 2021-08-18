@@ -64,7 +64,7 @@ extension TileView {
         subtitleLabel.font = UIFont.preferredFont(forTextStyle: .footnote)
         subtitleLabel.numberOfLines = 0
         subtitleLabel.lineBreakMode = .byWordWrapping
-
+        
         
         ctaButton.translatesAutoresizingMaskIntoConstraints = false
         
