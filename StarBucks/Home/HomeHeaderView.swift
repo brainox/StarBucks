@@ -7,11 +7,17 @@
 
 import UIKit
 
+protocol HomeHeaderViewDelegate: AnyObject {
+    func didTapHistoryButton(_ sender: HomeHeaderView)
+}
+
 class HomeHeaderView: UIView {
     
     let greeting = UILabel()
     let inboxButton = UIButton()
     let historyButton = UIButton()
+    
+    weak var delegate: HomeHeaderViewDelegate?
     
     override init(frame: CGRect) {
         super.init(frame: .zero)
@@ -42,6 +48,7 @@ extension HomeHeaderView {
     func layout() {
         addSubview(greeting)
         addSubview(inboxButton)
+        addSubview(historyButton)
         
         NSLayoutConstraint.activate([
             greeting.topAnchor.constraint(equalToSystemSpacingBelow: topAnchor, multiplier: 1),
@@ -51,8 +58,18 @@ extension HomeHeaderView {
             inboxButton.topAnchor.constraint(equalToSystemSpacingBelow: greeting.bottomAnchor, multiplier: 2),
             inboxButton.leadingAnchor.constraint(equalToSystemSpacingAfter: leadingAnchor, multiplier: 2),
             bottomAnchor.constraint(equalToSystemSpacingBelow: inboxButton.bottomAnchor, multiplier: 1),
-            inboxButton.widthAnchor.constraint(equalTo: widthAnchor, multiplier: 0.25)
+            inboxButton.widthAnchor.constraint(equalTo: widthAnchor, multiplier: 0.25),
+            
+            historyButton.leadingAnchor.constraint(equalToSystemSpacingAfter: inboxButton.trailingAnchor, multiplier: 2),
+            historyButton.centerYAnchor.constraint(equalTo: inboxButton.centerYAnchor),
+            historyButton.widthAnchor.constraint(equalTo: widthAnchor, multiplier: 0.25)
         ])
+    }
+}
+
+extension HomeHeaderView {
+    @objc func historyButtonTapped(sender: UIButton) {
+        delegate?.didTapHistoryButton(self)
     }
 }
 
