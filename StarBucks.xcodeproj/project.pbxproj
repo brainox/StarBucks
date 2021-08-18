@@ -23,6 +23,11 @@
 		B4A7F21A26C6CDBC004237AB /* TileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A7F21926C6CDBC004237AB /* TileViewController.swift */; };
 		B4B94F0C26C3F83800021C56 /* Factories.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B94F0B26C3F83800021C56 /* Factories.swift */; };
 		B4B94F0F26C4026C00021C56 /* HomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B94F0E26C4026C00021C56 /* HomeHeaderView.swift */; };
+		B4FB364426CD5537006392B6 /* TransactionsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FB363F26CD5537006392B6 /* TransactionsModel.swift */; };
+		B4FB364526CD5537006392B6 /* HistoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FB364026CD5537006392B6 /* HistoryService.swift */; };
+		B4FB364626CD5537006392B6 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FB364126CD5537006392B6 /* HistoryViewController.swift */; };
+		B4FB364726CD5537006392B6 /* HistoryViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FB364226CD5537006392B6 /* HistoryViewCell.swift */; };
+		B4FB364826CD5537006392B6 /* HistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FB364326CD5537006392B6 /* HistoryViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +49,11 @@
 		B4A7F21926C6CDBC004237AB /* TileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileViewController.swift; sourceTree = "<group>"; };
 		B4B94F0B26C3F83800021C56 /* Factories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Factories.swift; sourceTree = "<group>"; };
 		B4B94F0E26C4026C00021C56 /* HomeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderView.swift; sourceTree = "<group>"; };
+		B4FB363F26CD5537006392B6 /* TransactionsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionsModel.swift; sourceTree = "<group>"; };
+		B4FB364026CD5537006392B6 /* HistoryService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryService.swift; sourceTree = "<group>"; };
+		B4FB364126CD5537006392B6 /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		B4FB364226CD5537006392B6 /* HistoryViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewCell.swift; sourceTree = "<group>"; };
+		B4FB364326CD5537006392B6 /* HistoryViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				B41EC03126CA9DCD00EA7EC0 /* StarAndPoints */,
+				B4FB363E26CD54E8006392B6 /* HistoryTile */,
 				B42576D426C8077600B53283 /* Rewards */,
 				B4935F7326C34C4400FC9D3C /* HomeViewController.swift */,
 				B4B94F0E26C4026C00021C56 /* HomeHeaderView.swift */,
@@ -127,6 +138,18 @@
 				B4A7F21726C6CD80004237AB /* TileView.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		B4FB363E26CD54E8006392B6 /* HistoryTile */ = {
+			isa = PBXGroup;
+			children = (
+				B4FB364026CD5537006392B6 /* HistoryService.swift */,
+				B4FB364226CD5537006392B6 /* HistoryViewCell.swift */,
+				B4FB364126CD5537006392B6 /* HistoryViewController.swift */,
+				B4FB364326CD5537006392B6 /* HistoryViewModel.swift */,
+				B4FB363F26CD5537006392B6 /* TransactionsModel.swift */,
+			);
+			path = HistoryTile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,8 +223,11 @@
 			files = (
 				B42576DC26C9E65E00B53283 /* RewardsGraphView.swift in Sources */,
 				B4B94F0F26C4026C00021C56 /* HomeHeaderView.swift in Sources */,
+				B4FB364526CD5537006392B6 /* HistoryService.swift in Sources */,
 				B42576DA26C80C9500B53283 /* BalanceView.swift in Sources */,
 				B4B94F0C26C3F83800021C56 /* Factories.swift in Sources */,
+				B4FB364826CD5537006392B6 /* HistoryViewModel.swift in Sources */,
+				B4FB364726CD5537006392B6 /* HistoryViewCell.swift in Sources */,
 				B41EC03326CA9DE200EA7EC0 /* StarAndPoints.swift in Sources */,
 				B4935F7426C34C4400FC9D3C /* HomeViewController.swift in Sources */,
 				B42576D826C8079800B53283 /* RewardTileView.swift in Sources */,
@@ -211,6 +237,8 @@
 				B4A7F21826C6CD80004237AB /* TileView.swift in Sources */,
 				B41EC03726CAB48F00EA7EC0 /* StarRewardsView.swift in Sources */,
 				B4935F7026C34C4400FC9D3C /* AppDelegate.swift in Sources */,
+				B4FB364426CD5537006392B6 /* TransactionsModel.swift in Sources */,
+				B4FB364626CD5537006392B6 /* HistoryViewController.swift in Sources */,
 				B42576D626C8078E00B53283 /* RewardsTileViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
