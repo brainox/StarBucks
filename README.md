@@ -1,5 +1,5 @@
 # StarBucks
-An mini restaurant iOS App that displays the application of iOS Core Graphics and Animations. 
+A mini restaurant iOS App that displays the application of iOS Core Graphics and Animations. 
 
 https://user-images.githubusercontent.com/12437059/129940156-38b8391c-32b0-41d2-b60b-6b5b95874be2.mp4
 
