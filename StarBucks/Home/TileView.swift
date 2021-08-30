@@ -52,7 +52,6 @@ class TileView: UIView {
 extension TileView {
     func style() {
         imageView.translatesAutoresizingMaskIntoConstraints = false
-        imageView.image = UIImage(named: "meatless")
         imageView.clipsToBounds = true
         imageView.contentMode = .scaleAspectFit
         
